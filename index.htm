@@ -53,7 +53,7 @@
 		$(document).ready(function(){
 			$.get("/res/index.txt", function(data) {
                 console.log(data)
-                $("p.text").addBack(data);
+                $("p.text").text(data)
             });
         })
 	</script>
