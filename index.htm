@@ -34,10 +34,6 @@
         <main role="main" class="pb-3">
             
             <div class="text-center">
-                <h1>您好，欢迎访问</h1>
-                <p>---EntityBug's Main Server---</p>
-                <br />
-                <p class="text"></p>
             </div>
 
         </main>
@@ -53,7 +49,7 @@
 		$(document).ready(function(){
 			$.get("/res/index.html", function(data) {
                 console.log(data)
-                $("p.text").text(data)
+                $("div.text-center").text(data);
             });
         })
 	</script>
