@@ -37,7 +37,7 @@
                 <h1>您好，欢迎访问</h1>
                 <p>---EntityBug's Main Server---</p>
                 <br />
-
+                <p class="text"></p>
             </div>
 
         </main>
@@ -51,10 +51,11 @@
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script>
 		$(document).ready(function(){
-			$.get("/res/index.txt", function(response) {
-                $("div.text-center").addBack(response);
+			$.get("/res/index.txt", function(data) {
+                console.log(data)
+                $("p.text").addBack(data);
             });
-        })   
+        })
 	</script>
     <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/site.js?v=YQF8BZokYH-5boAqEexKfMHxVg2m64bgt92IkE6CllA"></script>
