@@ -49,7 +49,7 @@
 		$(document).ready(function(){
 			$.get("/res/index.html", function(data) {
                 console.log(data)
-                $("div.text-center").text(data);
+                $("div.text-center").html(data);
             });
         })
 	</script>
