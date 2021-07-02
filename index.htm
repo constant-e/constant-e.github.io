@@ -24,6 +24,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="http://entitybugmcserver.free.idcfengye.com/">Minecraft服务器</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="page('about')">关于</a>
                         </li>
                     </ul>
                 </div>
@@ -50,10 +52,16 @@
     <script>
 		$(document).ready(function(){
 			$.get("/res/index.html", function(data) {
-                console.log(data)
+                // console.log(data)
                 $("div.text-center").html(data);
             });
         })
+        function page(pageName) {
+            $.get("/res/%{pageName}.html", function(data) {
+                // console.log(data)
+                $("div.text-center").html(data);
+            });
+        }
 	</script>
     
 </body>
