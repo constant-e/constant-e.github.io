@@ -57,7 +57,7 @@
             });
         })
         function page(pageName) {
-            $.get("/res/%{pageName}.html", function(data) {
+            $.get("/res/" + pageName + ".html", function(data) {
                 // console.log(data)
                 $("div.text-center").html(data);
             });
