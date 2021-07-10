@@ -34,6 +34,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <div class="view"></div>
         </main>
     </div>
     <footer class="border-top text-muted footer">
@@ -49,7 +50,7 @@
 		$(document).ready(function(){
 			$.get("/res/index.html", function(data) {
                 // console.log(data)
-                $("main.pb-3").html(data);
+                $("div.view").html(data);
             });
         })
         function page(pageName) {
