@@ -38,8 +38,10 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
-        <div class="view"></div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="view"></div>
+        </main>
     </div>
     <footer class="border-top text-muted footer">
         <div class="container">
@@ -61,7 +63,7 @@
         function page(pageName) {
             $.get("/mcserver/docs/" + pageName + ".html", function(data) {
                 // console.log(data)
-                $("div.text-center").html(data);
+                $("div.view").html(data);
             });
         }
 	</script>
