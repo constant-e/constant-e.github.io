@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Server - eBug Services</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/">eBug Services</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:page('Index')">主页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:page('Notification')">公告</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:page('BEDetail')">基岩版服务器</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" href="javascript:page('Download')">下载</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:page('Info')">关于</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="view"></div>
+        </main>
+    </div>
+    <footer class="border-top text-muted footer">
+        <div class="container">
+            &copy; 2020-2021 EntityBug. All rights reserved.
+        </div>
+    </footer>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+		$(document).ready(function(){
+			$.get("/mcserver/docs/Index.html", function(data) {
+                // console.log(data)
+                $("div.view").html(data);
+            });
+        })
+        function page(pageName) {
+            $.get("/mcserver/docs/" + pageName + ".html", function(data) {
+                // console.log(data)
+                $("div.text-center").html(data);
+            });
+        }
+	</script>
+</body>
+</html>
