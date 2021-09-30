@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eBug Services</title>
+    <title>Minecraft Server - eBug Services</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/site.css" />
 </head>
@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" href="/en">eBug Services</a>
+                <a class="navbar-brand" href="/">eBug Services</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,13 +19,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:page('index');">Home Page</a>
+                            <a class="nav-link text-dark" href="javascript:page('Index')">Minecraft Server</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/en/mcserver">Minecraft Server</a>
+                            <a class="nav-link text-dark" href="javascript:page('Notification')">Notifications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:page('about');">About</a>
+                            <a class="nav-link text-dark" href="javascript:page('BEDetail')">Minecraft Bedrock Edition Server</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" href="javascript:page('Download')">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:page('Info')">About</a>
                         </li>
                     </ul>
                 </div>
@@ -39,26 +45,26 @@
     </div>
     <footer class="border-top text-muted footer">
         <div class="container">
-            &copy;2021 EntityBug. All rights reserved. <a href="/">简体中文(Chinese Simplified)</a>
+            &copy; 2020-2021 EntityBug. All rights reserved.<a href="/mcserver">简体中文（Chinese Simplified）</a>
         </div>
     </footer>
     
+
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
 		$(document).ready(function(){
-			$.get("/en/res/index.html", function(data) {
+			$.get("/en/mcserver/docs/Index.html", function(data) {
                 // console.log(data)
                 $("div.view").html(data);
             });
         })
         function page(pageName) {
-            $.get("/en/res/" + pageName + ".html", function(data) {
+            $.get("/en/mcserver/docs/" + pageName + ".html", function(data) {
                 // console.log(data)
-                $("div.text-center").html(data);
+                $("div.view").html(data);
             });
         }
 	</script>
-    
 </body>
 </html>
