@@ -265,3 +265,9 @@ body {
 .container {
   flex: 1;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(100%);
+  }
+}
