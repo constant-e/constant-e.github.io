@@ -1,13 +1,9 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
+﻿a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
 }
@@ -24,11 +20,37 @@ a {
   border-color: #1861ac;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+@font-face {
+    font-family: 'SF Pro';
+    src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+        url('/font/SFProDisplay-Regular.woff2') format('woff2'),
+        url('/font/SFProDisplay-Regular.woff') format('woff'),
+        url('/font/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'JB Mono';
+	src: local('JetBrains Mono Regular'), local('JetBrains Mono')
+		url('/font/JetBrainsMono-Regular.woff2') format('woff2'),
+		url('/font/JetBrainsMono-Regular.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
 html {
   font-size: 14px;
+  font-family: 'SF Pro';
+  position: relative;
+  min-height: 100%;
+  word-wrap: break-word;
 }
+
+code {
+	font-family: 'JB Mono';
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -49,14 +71,6 @@ html {
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-  word-wrap: break-word;
 }
 
 body {
