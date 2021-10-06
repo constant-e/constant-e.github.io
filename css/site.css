@@ -171,6 +171,6 @@ body {
   line-height: 60px;
 }
 
-main {
+.container {
   flex: 1;
 }
