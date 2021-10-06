@@ -75,6 +75,8 @@ button.accept-policy {
 body {
   margin-bottom: 60px;
   font-family: 'SF Pro';
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
