@@ -270,4 +270,10 @@ body {
   html {
     filter: invert(100%);
   }
+  img {
+    filter: invert(0%);
+  }
+  .box-shadow {
+    filter: invert(0%);
+  }
 }
