@@ -276,4 +276,11 @@ body {
   .box-shadow {
     box-shadow: none;
   }
+  div.view {
+    color: #FF1B1B1D
+  }
+}
+
+div.view {
+  color: #fff2f0f4
 }
