@@ -270,17 +270,24 @@ body {
   html {
     filter: invert(100%);
   }
-  img {
+  img, a {
     filter: invert(0%);
   }
   .box-shadow {
     box-shadow: none;
   }
   body {
-    color: #FF1B1B1D
+    background-color: #FF1B1B1D;
+  }
+  div.view {
+    background-color: #FF303033;
   }
 }
 
 body {
-  color: #fff2f0f4
+  background-color: #FFF2F0F4;
+}
+
+div.view {
+  background-color: #FFFBF8FD;
 }
