@@ -269,7 +269,6 @@ body {
 @media (prefers-color-scheme: dark) {
   html {
     filter: invert(100%);
-    color: #FF1B1B1D
   }
   img {
     filter: invert(0%);
@@ -277,8 +276,11 @@ body {
   .box-shadow {
     box-shadow: none;
   }
+  body {
+    color: #FF1B1B1D
+  }
 }
 
-html {
+body {
   color: #fff2f0f4
 }
