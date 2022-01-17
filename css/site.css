@@ -276,7 +276,7 @@ body {
   .box-shadow {
     box-shadow: none;
   }
-  body {
+  body.background {
     background-color: #FF1B1B1D;
   }
   div.view {
@@ -284,7 +284,7 @@ body {
   }
 }
 
-body {
+body.background {
   background-color: #FFF2F0F4;
 }
 
