@@ -277,17 +277,17 @@ body {
     box-shadow: none;
   }
   body.background {
-    background-color: #FF1B1B1D;
+    background-color: #2E2E2E;
   }
   div.view {
-    background-color: #FF303033;
+    background-color: #2E2E2E;
   }
 }
 
 body.background {
-  background-color: #FFF2F0F4;
+  background-color: #E0E0E0;
 }
 
 div.view {
-  background-color: #FFFBF8FD;
+  background-color: #E0E0E0;
 }

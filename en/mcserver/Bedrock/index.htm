@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft Server - eBug Services</title>
+    <title>Bedrock Server - eBug Services</title>
     <link rel="stylesheet" href="/css/site.css" />
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
@@ -19,19 +19,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:page('Index')">主页</a>
+                            <a class="nav-link text-dark" href="javascript:page('Index')">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:page('Notification')">公告</a>
+                            <a class="nav-link text-dark" href="javascript:page('Notifications')">Notifications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="Bedrock">基岩版服务器</a>
+                            <a class="nav-link text-dark" href="javascript:page('BERules')">Rules</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" href="javascript:page('Download')">Download</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="Java">（暂未开放）Java版服务器</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:page('Info')">关于</a>
+                            <a class="nav-link text-dark" href="javascript:page('Info')">About</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
     </div>
     <footer class="border-top text-muted footer">
         <div class="container">
-            &copy; 2020-2022 EntityBug. All rights reserved. <a href="/en/mcserver">English(英语)</a>
+            &copy; 2020-2021 EntityBug. All rights reserved. <a href="/en/mcserver">English(英语)</a>
         </div>
     </footer>
     
@@ -63,7 +63,7 @@
             });
         })
         function page(pageName) {
-            $.get("/mcserver/docs/" + pageName + ".html", function(data) {
+            $.get("/en/mcserver/Bedrock/docs/" + pageName + ".html", function(data) {
                 // console.log(data)
                 $("div.view").html(data);
             });
