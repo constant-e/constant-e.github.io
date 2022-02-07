@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft Server - eBug Services</title>
+    <title>Java Server - eBug Services</title>
     <link rel="stylesheet" href="/css/site.css" />
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
@@ -22,13 +22,7 @@
                             <a class="nav-link text-dark" href="javascript:page('Index')">主页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:page('Notification')">公告</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="Bedrock">基岩版服务器</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="Java">（暂未开放）Java版服务器</a>
+                            <a class="nav-link text-dark" href="javascript:page('Notifications')">公告</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="javascript:page('Info')">关于</a>
@@ -48,7 +42,7 @@
     </div>
     <footer class="border-top text-muted footer">
         <div class="container">
-            &copy; 2020 EntityBug. All rights reserved. <a href="/en/mcserver">English(英语)</a>
+            &copy; 2020 EntityBug. All rights reserved. <a href="/en/mcserver/Java">English(英语)</a>
         </div>
     </footer>
     
@@ -57,13 +51,13 @@
     <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
 		$(document).ready(function(){
-			$.get("/mcserver/docs/Index.html", function(data) {
+			$.get("/mcserver/Java/docs/Index.html", function(data) {
                 // console.log(data)
                 $("div.view").html(data);
             });
         })
         function page(pageName) {
-            $.get("/mcserver/docs/" + pageName + ".html", function(data) {
+            $.get("/mcserver/Java/docs/" + pageName + ".html", function(data) {
                 // console.log(data)
                 $("div.view").html(data);
             });
