@@ -281,10 +281,19 @@ body {
   a {
     color: #50A8D8;
   }
+  nav {
+    background-color: #272727;
+  }
   .navbar {
     background-color: #272727;
   }
   hr {
     color: #FFFFFF;
+  }
+  pre {
+    color: #FFFFFF;
+  }
+  html {
+    background: #272727;
   }
 }
