@@ -267,19 +267,24 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    filter: invert(100%);
-  }
-  img, a {
-    filter: invert(0%);
-  }
   .box-shadow {
     box-shadow: none;
   }
   body.background {
-    background-color: #2E2E2E;
+    background-color: #272727;
+    color: #FFFFFF;
   }
   div.view {
-    background-color: #2E2E2E;
+    background-color: #272727;
+    color: #FFFFFF;
+  }
+  a {
+    color: #50A8D8;
+  }
+  .navbar {
+    background-color: #272727;
+  }
+  hr {
+    color: #FFFFFF;
   }
 }
