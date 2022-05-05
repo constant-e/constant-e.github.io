@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+        url('/font/SFProDisplay-Regular.woff2') format('woff2'),
+        url('/font/SFProDisplay-Regular.woff') format('woff'),
+        url('/font/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'JB Mono';
+	src: local('JetBrains Mono Regular'), local('JetBrains Mono')
+		url('/font/JetBrainsMono-Regular.woff2') format('woff2'),
+		url('/font/JetBrainsMono-Regular.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+  
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+body {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'SF Pro';
+}
+
+pre {
+	font-family: 'JB Mono';
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
