@@ -1,2 +1,2 @@
-# EntityBug.github.io
-EntityBug's Main Server
+# constant-e.github.io
+constant-e's server
