@@ -1,1 +1,0 @@
-import{_ as t,c as a,o as e,a4 as r}from"./chunks/framework.DpC1ZpOZ.js";const d=JSON.parse('{"title":"关于constant-e","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),o={name:"about.md"},n=r("",15),i=[n];function l(s,c,h,p,_,u){return e(),a("div",null,i)}const b=t(o,[["render",l]]);export{d as __pageData,b as default};
