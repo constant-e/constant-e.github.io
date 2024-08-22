@@ -28,6 +28,7 @@ export default defineConfig({
         {
           text: 'Linux',
           items: [
+            { text: 'Arch Linux 安装', link: '/blogs/linux/install_arch.md' },
             { text: '备忘录', link: '/blogs/linux/notes' },
           ]
         }
