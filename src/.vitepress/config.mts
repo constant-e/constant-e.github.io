@@ -22,6 +22,7 @@ export default defineConfig({
         {
           text: 'Android',
           items: [
+            { text: '建议', link: '/blogs/android/advices' },
             { text: 'Root', link: '/blogs/android/root' },
           ]
         },
