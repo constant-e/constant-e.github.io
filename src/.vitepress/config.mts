@@ -23,6 +23,7 @@ export default defineConfig({
           text: 'Android',
           items: [
             { text: '建议', link: '/blogs/android/advices' },
+            { text: 'LSPosed', link: '/blogs/android/lsposed' },
             { text: 'Root', link: '/blogs/android/root' },
           ]
         },
