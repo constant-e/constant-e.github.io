@@ -91,3 +91,4 @@ README中称支持至15 Beta 4。
         path: libxposed/api
         ref: 54582730315ba4a3d7cfaf9baf9d23c419e07006
     ```
+5. 不要更新rikka mainswitchbar到1.1.0，否则在管理器里无法启用/禁用模块。
