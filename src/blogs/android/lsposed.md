@@ -3,20 +3,27 @@
 众所周知，LSPosed在2024.1停止了公开更新，并且短期内没有恢复的希望。而原版LSPosed没有公开对新Android版本的修复。因此，在一段时间内，我们需要LSPosed的修改版。
 
 ## LSPosed目前的状态
-更新：2024.9.29
+更新：2024.10.25
 
-### 1. 官方版
+### 1. 官方版（公开）
 **GitHub仓库**：[LSPosed/LSPosed](https://github.com/LSPosed/LSPosed)
 
 **最新Release**：v1.9.2 (7024)
 
 **最新CI**：v1.9.2 (7058)
 
-**状态**：停更，曾有过测试计划（后允许捐赠用户申请），2024.8后关闭。
+**状态**：停更。
 
-### 2. 非官方版1（“mod版”）
+### 2. 官方版（Internal Test）
+**Telegram**：[LSPosed Internal Test](https://t.me/+S2M0Atr6H1cyOWM9)
 
-README中称支持至15 Beta 2.1。（理论上也能支持Android 15 Beta 4）
+**最新版**：v1.9.2 (7233)
+
+**状态**：正常。
+
+### 3. 非官方版1（“mod版”）
+
+README中称支持至15 Beta 2.1。（理论上也能支持Android 15 正式版）
 
 **GitHub仓库**：[mywalkb/LSPosed_mod](https://github.com/mywalkb/LSPosed_mod)
 
@@ -26,19 +33,19 @@ README中称支持至15 Beta 2.1。（理论上也能支持Android 15 Beta 4）
 
 **状态**：未知。由于libxposed api的一些变动，新的dependabot和crowdin的test都没过。
 
-### 3. 非官方版2（“7086/1.10”）
+### 4. 非官方版2（“1.10”）
 
-README中称支持至15 Beta 4。
+README中称支持至15 正式版。
 
 **GitHub仓库**：[JingMatrix/LSPosed](https://github.com/JingMatrix/LSPosed)
 
-**最新Release**：v1.10 (7086)
+**最新Release**：v1.10.1 (7115)
 
-**最新CI**：v1.10 (7104)
+**最新CI**：v1.10.1 (7119)
 
 **状态**：尚在活跃更新。
 
-### 4. 非官方版3（“npm-open”）
+### 5. 非官方版3（“npm-open”）
 
 5ec1cff的一个分支，修复了Android 14 QPR3的Bug，没有支持stripped libart。在npm-open分支下。没有构建。
 
