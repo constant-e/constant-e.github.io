@@ -21,5 +21,5 @@ hero:
 
 features:
   - title: 个人简介
-    details: 一个很菜的开发者、Linux用户，会一点Android。常用语言Rust、C++、Python。
+    details: 开发者、Linux用户、Android用户。常用语言Rust、C++、Python。
 ---

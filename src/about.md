@@ -5,7 +5,7 @@
 1. [CEMCL](https://github.com/constant-e/CEMCL)：一个跨平台Minecraft: Java Edition启动器，使用Rust和Slint编写。
 2. [mayfly_gsi_tweaks](https://github.com/constant-e/mayfly_gsi_tweaks)：（已停更）Xiaomi 12S (mayfly)的类原生GSI优化模块和教程。
 3. [LuckyDog](https://github.com/constant-e/LuckyDog)：一个简单的点名器。给班级写的，一般不会更新。
-4. [Notepad](https://github.com/constant-e/Notepad)：（已停更）一个简单的文本编辑器，使用C++和Qt编写。初学时随便写的项目，当个乐子就行。
+4. [Notepad](https://github.com/constant-e/Notepad)：（已停更）一个简单的文本编辑器，使用C++和Qt编写。（初学时乱写的项目）
 
 ## 社交平台
 GitHub：[constant-e](https://github.com/constant-e/)
