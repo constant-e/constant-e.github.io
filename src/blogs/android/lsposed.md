@@ -1,9 +1,11 @@
 # LSPosed
 
-众所周知，LSPosed在2024.1停止了公开更新，并且短期内没有恢复的希望。而原版LSPosed没有公开对新Android版本的修复。因此，在一段时间内，我们需要LSPosed的修改版。
+众所周知，LSPosed在2024.1停止了公开更新，并且短期内没有完全恢复的希望。而官方版LSPosed没有公开对新Android版本的修复。因此，在一段时间内，我们需要LSPosed的修改版。
 
 ## LSPosed目前的状态
-更新：2024.10.25
+更新：2025.01.28
+
+**注**：关于Android 15的兼容性，我只用过内测版，没测过其他版本，所以均是根据README和commit描述的。
 
 ### 1. 官方版（公开）
 **GitHub仓库**：[LSPosed/LSPosed](https://github.com/LSPosed/LSPosed)
@@ -12,18 +14,42 @@
 
 **最新CI**：v1.9.2 (7058)
 
-**状态**：停更。
+**状态**：仓库已解除存档，但未恢复更新。
 
 ### 2. 官方版（Internal Test）
-**Telegram**：[LSPosed Internal Test](https://t.me/+S2M0Atr6H1cyOWM9)
-
-**最新版**：v1.9.2 (7233)
+见Telegram *LSPosed Internal Test*群组。
 
 **状态**：正常。
 
-### 3. 非官方版1（“mod版”）
+### 3. LSPosed-Irena
 
-README中称支持至15 Beta 2.1。（理论上也能支持Android 15 正式版）
+README中称支持至Android 15 正式版。
+
+**GitHub仓库**：[re-zero001/LSPosed-Irena](https://github.com/re-zero001/LSPosed-Irena)
+
+**最新Release**：v1.9.2 (7249)
+
+**最新CI**：未启用GitHub Actions。
+
+**状态**：未知。
+
+**注**：此分支作者禁止分享到酷安。
+
+### 4. JingMatrix版
+
+README中称支持至Android 15 正式版。
+
+**GitHub仓库**：[JingMatrix/LSPosed](https://github.com/JingMatrix/LSPosed)
+
+**最新Release**：v1.10.1 (7115)
+
+**最新CI**：v1.10.1 (7168)
+
+**状态**：尚在活跃更新。
+
+### 5. LSPosed_mod
+
+README中称支持至Android 15 Beta 2.1。
 
 **GitHub仓库**：[mywalkb/LSPosed_mod](https://github.com/mywalkb/LSPosed_mod)
 
@@ -33,19 +59,7 @@ README中称支持至15 Beta 2.1。（理论上也能支持Android 15 正式版�
 
 **状态**：未知。由于libxposed api的一些变动，新的dependabot和crowdin的test都没过。
 
-### 4. 非官方版2（“1.10”）
-
-README中称支持至15 正式版。
-
-**GitHub仓库**：[JingMatrix/LSPosed](https://github.com/JingMatrix/LSPosed)
-
-**最新Release**：v1.10.1 (7115)
-
-**最新CI**：v1.10.1 (7119)
-
-**状态**：尚在活跃更新。
-
-### 5. 非官方版3（“npm-open”）
+### 6. npm-open
 
 5ec1cff的一个分支，修复了Android 14 QPR3的Bug，没有支持stripped libart。在npm-open分支下。没有构建。
 
@@ -54,7 +68,7 @@ README中称支持至15 正式版。
 **状态**：未知。
 
 ### 这些分支的关系
-5ec1cff和mywalkb的分支相对“独立”，都有自己的一些修改和修复。JingMatrix的分支合并了5ec1cff的所有新commit和mywalkb的两个修复（详见下文），并引入了自己的修改。如果使用非官方版LSPosed，个人建议用JingMatrix的。
+除npm-open外，这些分支在早期都合并了mywalkb的两个修复（详见下文）。LSPosed-Irena和JingMatrix版都合并了npm-open的代码。除这些以外，这几个分支没有明显的继承关系。
 
 ## 在Android 14 QPR2及以上上修复LSPosed
 
@@ -99,3 +113,7 @@ README中称支持至15 正式版。
         ref: 54582730315ba4a3d7cfaf9baf9d23c419e07006
     ```
 5. 不要更新rikka mainswitchbar到1.1.0，否则在管理器里无法启用/禁用模块。
+
+---
+
+250128 注：修正了一些表述，添加了Irena版（之前没注意到）。另外那个修复LSPosed的方案不一定适用于最新Android 15，加入内测后就没再试过。

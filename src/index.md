@@ -13,9 +13,6 @@ hero:
       text: CEMCL - MC启动器
       link: https://constant-e.github.io/CEMCL
     - theme: alt
-      text: MC服务器
-      link: https://constant-e.github.io/mcserver
-    - theme: alt
       text: 关于constant-e
       link: /about
 
