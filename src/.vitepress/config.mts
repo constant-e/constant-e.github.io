@@ -25,6 +25,7 @@ export default defineConfig({
             { text: '建议', link: '/blogs/android/advices' },
             { text: 'LSPosed', link: '/blogs/android/lsposed' },
             { text: 'Root', link: '/blogs/android/root' },
+            { text: '如何伪造一个LSPosed 内测版', link: '/blogs/android/fake_lsposed_it'},
           ]
         },
         {
