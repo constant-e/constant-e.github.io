@@ -34,7 +34,7 @@ val zipName = ...
 
 在magisk-loader/magisk_module/module.prop中，删掉api，添加IT后缀和GitHub用户名（LSPosed IT (Github@{userName})）。
 
-```prop
+```ini
 name=${api} - LSPosed
 ```
 

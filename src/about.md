@@ -7,7 +7,7 @@
 3. [LuckyDog](https://github.com/constant-e/LuckyDog)：一个简单的点名器。给班级写的，一般不会更新。
 4. [Notepad](https://github.com/constant-e/Notepad)：（已停更）一个简单的文本编辑器，使用C++和Qt编写。（初学时乱写的项目）
 
-## 社交平台
+## 互联网账号
 GitHub：[constant-e](https://github.com/constant-e/)
 
 酷安：[constantE](http://www.coolapk.com/u/2405608)
@@ -21,7 +21,7 @@ BiliBili：[constant_e](https://space.bilibili.com/400835353)
 ## 联系方式
 邮箱：fmn_tzx@outlook.com
 
-陌生人仅接受邮箱和上述[社交平台](#社交平台)私信（若可用）。
+陌生人仅接受邮箱和[上述平台账号](#互联网账号)私信（若可用）。
 
 ## 鸣谢
 [VitePress](https://github.com/vuejs/vitepress)

@@ -3,7 +3,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "constant-e's Website",
   description: "constant-e's Website",
-  lang: "zh-CN",
+  lang: 'zh-CN',
+  lastUpdated: true,
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
@@ -14,13 +15,42 @@ export default defineConfig({
     ],
 
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    lastUpdated: {
+      text: '最后更新于'
+    },
+
+    outline: {
+      label: '页面导航'
     },
 
     sidebar: {
       '/blogs/': [
         {
           text: 'Android',
+          link: '/blogs/android/',
           items: [
             { text: '建议', link: '/blogs/android/advices' },
             { text: 'LSPosed', link: '/blogs/android/lsposed' },
@@ -30,6 +60,7 @@ export default defineConfig({
         },
         {
           text: 'Linux',
+          link: '/blogs/linux/',
           items: [
             { text: 'Arch Linux 安装', link: '/blogs/linux/install_arch.md' },
             { text: '备忘录', link: '/blogs/linux/notes' },
@@ -37,6 +68,7 @@ export default defineConfig({
         },
         {
           text: '杂项',
+          link: '/blogs/others/',
           items: [
             { text: '阅读(legado)书源', link: '/blogs/others/legado_source.md' },
           ]

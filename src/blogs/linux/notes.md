@@ -13,7 +13,7 @@ chmod -x /path/to/wpscloudsvr
 ```
 /etc/pacman.d/hooks/wps-office-cn.hook
 ```
-```conf
+```ini
 [Trigger]
 Type = Package
 Operation = Install
