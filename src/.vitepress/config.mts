@@ -34,6 +34,12 @@ export default defineConfig({
             { text: 'Arch Linux 安装', link: '/blogs/linux/install_arch.md' },
             { text: '备忘录', link: '/blogs/linux/notes' },
           ]
+        },
+        {
+          text: '杂项',
+          items: [
+            { text: '阅读(legado)书源', link: '/blogs/others/legado_source.md' },
+          ]
         }
       ]
     },
