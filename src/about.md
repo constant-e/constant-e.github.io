@@ -10,13 +10,13 @@
 ## 互联网账号
 GitHub：[constant-e](https://github.com/constant-e/)
 
-酷安：[constantE](http://www.coolapk.com/u/2405608)
+酷安：[a2559fb](http://www.coolapk.com/u/2405608)
 
 BiliBili：[constant_e](https://space.bilibili.com/400835353)
 
 仅以上三个平台对外公开。
 
-网名及曾用网名：constant-e及其变种、EntityBug、EntityNull 7145。
+网名及曾用网名：constant-e及其变种和哈希值、EntityBug、EntityNull 7145。
 
 ## 联系方式
 邮箱：fmn_tzx@outlook.com
