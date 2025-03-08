@@ -28,8 +28,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v4
+      - name: Recover modified times
+        run: git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
       - name: Install Dependencies
         run: npm install
       - name: Build Pages
