@@ -47,14 +47,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'urn:fontconfig:fonts.dtd'>
 <fontconfig>
-  <match target="pattern">
-    <test name="family">
-      <string>system-ui</string>
-    </test>
-    <edit binding="strong" mode="prepend" name="family">
-      <string>sans-serif</string>
-    </edit>
-  </match>
   <!-- default -->
   <alias>
     <family>sans-serif</family>
@@ -63,6 +55,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <family>Noto Color Emoji</family>
     </prefer>
   </alias>
+
   <alias>
     <family>serif</family>
     <prefer>
@@ -70,6 +63,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <family>Noto Color Emoji</family>
     </prefer>
   </alias>
+
   <alias>
     <family>monospace</family>
     <prefer>
@@ -78,9 +72,58 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <family>Noto Color Emoji</family>
     </prefer>
   </alias>
+
+  <alias>
+    <family>system-ui</family>
+    <prefer>
+      <family>sans</family>
+    </prefer>
+  </alias>
+
+  <!-- English -->
+  <match target="pattern">
+    <test name="lang" compare="contains">
+      <string>en</string>
+    </test>
+    <test name="family">
+      <string>sans-serif</string>
+    </test>
+    <edit binding="strong" mode="prepend" name="family">
+      <string>Noto Sans</string>
+      <string>Noto Color Emoji</string>
+    </edit>
+  </match>
+
+  <match target="pattern">
+    <test name="lang" compare="contains">
+      <string>en</string>
+    </test>
+    <test name="family">
+      <string>serif</string>
+    </test>
+    <edit binding="strong" mode="prepend" name="family">
+      <string>Noto Serif</string>
+      <string>Noto Color Emoji</string>
+    </edit>
+  </match>
+
+  <match target="pattern">
+    <test name="lang" compare="contains">
+      <string>en</string>
+    </test>
+    <test name="family">
+      <string>monospace</string>
+    </test>
+    <edit binding="strong" mode="prepend" name="family">
+      <string>Fira Code</string>
+      <string>Noto Sans Mono</string>
+      <string>Noto Color Emoji</string>
+    </edit>
+  </match>
+
   <!-- zh-CN -->
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>zh-CN</string>
     </test>
     <test name="family">
@@ -92,8 +135,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>zh-CN</string>
     </test>
     <test name="family">
@@ -105,8 +149,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>zh-CN</string>
     </test>
     <test name="family">
@@ -118,49 +163,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
-  <!-- zh-HK -->
-  <match target="pattern">
-    <test name="lang">
-      <string>zh-HK</string>
-    </test>
-    <test name="family">
-      <string>sans-serif</string>
-    </test>
-    <edit binding="strong" mode="prepend" name="family">
-      <string>Noto Sans CJK HK</string>
-      <string>Noto Sans</string>
-      <string>Noto Color Emoji</string>
-    </edit>
-  </match>
-  <match target="pattern">
-    <test name="lang">
-      <string>zh-HK</string>
-    </test>
-    <test name="family">
-      <string>serif</string>
-    </test>
-    <edit binding="strong" mode="prepend" name="family">
-      <string>Noto Serif CJK TC</string>
-      <string>Noto Serif</string>
-      <string>Noto Color Emoji</string>
-    </edit>
-  </match>
-  <match target="pattern">
-    <test name="lang">
-      <string>zh-HK</string>
-    </test>
-    <test name="family">
-      <string>monospace</string>
-    </test>
-    <edit binding="strong" mode="prepend" name="family">
-      <string>Fira Code</string>
-      <string>Noto Sans Mono CJK TC</string>
-      <string>Noto Color Emoji</string>
-    </edit>
-  </match>
+
   <!-- zh-TW -->
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>zh-TW</string>
     </test>
     <test name="family">
@@ -172,8 +178,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>zh-TW</string>
     </test>
     <test name="family">
@@ -185,8 +192,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>zh-TW</string>
     </test>
     <test name="family">
@@ -198,9 +206,53 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
+  <!-- zh-HK -->
+  <match target="pattern">
+    <test name="lang" compare="contains">
+      <string>zh-HK</string>
+    </test>
+    <test name="family">
+      <string>sans-serif</string>
+    </test>
+    <edit binding="strong" mode="prepend" name="family">
+      <string>Noto Sans CJK HK</string>
+      <string>Noto Sans</string>
+      <string>Noto Color Emoji</string>
+    </edit>
+  </match>
+
+  <match target="pattern">
+    <test name="lang" compare="contains">
+      <string>zh-HK</string>
+    </test>
+    <test name="family">
+      <string>serif</string>
+    </test>
+    <edit binding="strong" mode="prepend" name="family">
+      <string>Noto Serif CJK TC</string>
+      <string>Noto Serif</string>
+      <string>Noto Color Emoji</string>
+    </edit>
+  </match>
+
+  <match target="pattern">
+    <test name="lang" compare="contains">
+      <string>zh-HK</string>
+    </test>
+    <test name="family">
+      <string>monospace</string>
+    </test>
+    <edit binding="strong" mode="prepend" name="family">
+      <string>Fira Code</string>
+      <string>Noto Sans Mono CJK TC</string>
+      <string>Noto Color Emoji</string>
+    </edit>
+  </match>
+
   <!-- Japanese -->
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>ja</string>
     </test>
     <test name="family">
@@ -212,8 +264,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>ja</string>
     </test>
     <test name="family">
@@ -225,8 +278,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>ja</string>
     </test>
     <test name="family">
@@ -238,9 +292,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <!-- Korean -->
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>ko</string>
     </test>
     <test name="family">
@@ -252,8 +307,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>ko</string>
     </test>
     <test name="family">
@@ -265,8 +321,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
-    <test name="lang">
+    <test name="lang" compare="contains">
       <string>ko</string>
     </test>
     <test name="family">
@@ -278,6 +335,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <!-- zh fallback -->
   <match target="pattern">
     <test name="lang" compare="contains">
@@ -292,6 +350,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
     <test name="lang" compare="contains">
       <string>zh</string>
@@ -305,6 +364,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
       <string>Noto Color Emoji</string>
     </edit>
   </match>
+
   <match target="pattern">
     <test name="lang" compare="contains">
       <string>zh</string>
