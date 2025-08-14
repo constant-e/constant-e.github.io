@@ -42,8 +42,7 @@ export default defineConfig({
           text: 'Linux',
           link: '/blogs/linux/',
           items: [
-            { text: 'Arch Linux 安装', link: '/blogs/linux/install_arch.md' },
-            { text: '备忘录', link: '/blogs/linux/notes' },
+            { text: 'Arch Linux 安装与配置', link: '/blogs/linux/archlinux.md' },
             { text: '在Rog Strix G16 2025 (G614PR)上运行Arch Linux', link: '/blogs/linux/archlinux-rog-g614pr.md' },
           ]
         },
