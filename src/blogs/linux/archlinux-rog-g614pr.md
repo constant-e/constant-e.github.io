@@ -31,8 +31,8 @@
     （已知唯一反例是在Firefox中的部分弹窗，如部分右键菜单和扩展窗口，会发生模糊）
 
     可以在Just Perfection插件中关闭顶栏中的无障碍菜单图标
-- KDE下，分数缩放会使许多图标，和桌面图标中的字体等模糊，还会使一些kde软件中的特定组件在刷新时抖动或撕裂，暂时无解。（KDE使用125%不能解决问题，使用160%实际上并没有缩放到整数）
+- KDE下，分数缩放会使许多图标，和桌面图标中的字体等模糊，还会使一些kde软件中的特定组件在刷新时抖动或撕裂。这个Bug被汇报在[bugs.kde.org](https://bugs.kde.org/show_bug.cgi?id=479891)，一个已知的有效解决办法是添加`QT_SCALE_FACTOR_ROUNDING_POLICY=RoundPreferFloor`环境变量。（然而，这个Bug理论上已经被修复了，不清楚为什么还存在）
 
-因此推荐使用GNOME
+因为KDE在HiDPI的其它方面做得比GNOME好得多，推荐使用KDE
 
 对于WM，实测在Hyprland下Wayland的HiDPI没有模糊的问题，偶尔有类似KDE的撕裂问题（其实频率极低，并不影响）。对于XWayland不能解决模糊问题，可以只修改字体DPI（通过Xft.dpi）。
