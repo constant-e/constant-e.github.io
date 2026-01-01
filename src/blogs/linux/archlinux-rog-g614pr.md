@@ -15,12 +15,17 @@
 ```
 
 ## 已知问题
-似乎由于ACPI的问题，开机时存在约35s的停滞：
+似乎由于ACPI的问题，开机时存在约36s的停滞：
 ```
 [    2.217804] clocksource: Switched to clocksource tsc
 [   37.699508] clk: Disabling unused clocks
 ```
-暂时没有修复方法
+
+[ArchWiki](https://bbs.archlinux.org/viewtopic.php?pid=2278282#p2278282) 提供了解决方案：添加
+```
+gpiolib_acpi.run_edge_events_on_boot=0
+```
+至内核参数
 
 ## HiDPI
 屏幕分辨率是2560*1600，推荐缩放1.5，但这样会使得缩放后2560/1.5和1600/1.5都不是整数。目前比较合适的缩放是125%（缩放后仍较小，可以配合字体DPI混用）和160%（有点大）。
@@ -32,6 +37,8 @@
 
     可以在Just Perfection插件中关闭顶栏中的无障碍菜单图标
 - KDE下，分数缩放会使许多图标，和桌面图标中的字体等模糊，还会使一些kde软件中的特定组件在刷新时抖动或撕裂。这个Bug被汇报在[bugs.kde.org](https://bugs.kde.org/show_bug.cgi?id=479891)，一个已知的有效解决办法是添加`QT_SCALE_FACTOR_ROUNDING_POLICY=RoundPreferFloor`环境变量。（然而，这个Bug理论上已经被修复了，不清楚为什么还存在）
+  
+    更新：这个问题被部分修复了，但未完全解决。另外，添加这个环境变量会使一些软件（如微信）无法自动缩放，需要手动设置`QT_SCALE_FACTOR`
 
 因为KDE在HiDPI的其它方面做得比GNOME好得多，推荐使用KDE
 
