@@ -1,5 +1,5 @@
 # 关于constant-e
-一个很菜的开发者、Linux用户，会一点Android。常用语言Rust、C++、Python。
+开发者、Linux用户、Android用户。常用语言Rust、C++、Python。
 
 ## 项目列表
 1. [CEMCL](https://github.com/constant-e/CEMCL)：一个跨平台Minecraft: Java Edition启动器，使用Rust和Slint编写。
@@ -10,18 +10,8 @@
 ## 互联网账号
 GitHub：[constant-e](https://github.com/constant-e/)
 
-酷安：[a2559fb](http://www.coolapk.com/u/2405608)
-
-BiliBili：[constant_e](https://space.bilibili.com/400835353)
-
-仅以上三个平台对外公开。
-
-网名及曾用网名：constant-e及其变种和哈希值、EntityBug、EntityNull 7145。
-
 ## 联系方式
 邮箱：fmn_tzx@outlook.com
-
-陌生人仅接受邮箱和[上述平台账号](#互联网账号)私信（若可用）。
 
 ## 鸣谢
 [VitePress](https://github.com/vuejs/vitepress)
