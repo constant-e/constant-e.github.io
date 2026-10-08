@@ -1,5 +1,7 @@
 # 在Rog Strix G16 2025 (G614PR)上运行Arch Linux
 
+**更新**：[驱动程序](#驱动程序)与[已知问题](#已知问题)已被修复。KDE Plasma的HiDPI效果也有明显改善。
+
 ## 驱动程序
 几乎无需额外安装，为了调节灯光，需要安装`asusctl`和`rog-control-center`，并在`/usr/share/asusd/aura_support.ron`中添加：
 ```
