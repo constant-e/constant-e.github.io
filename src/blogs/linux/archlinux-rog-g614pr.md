@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # 在Rog Strix G16 2025 (G614PR)上运行Arch Linux
 
 **更新**：[驱动程序](#驱动程序)与[已知问题](#已知问题)已被修复。KDE Plasma的HiDPI效果也有明显改善。

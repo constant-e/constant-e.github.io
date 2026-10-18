@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # Arch Linux 安装与配置
 关于安装与使用archlinux的一些经验
 

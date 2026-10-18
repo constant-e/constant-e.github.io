@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Android Root
 在现代Android系统上利用Magisk或KernelSU等Root框架获取Root权限。
 本文假定读者具有搜索能力和基础的计算机知识、Android知识。
