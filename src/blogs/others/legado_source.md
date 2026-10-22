@@ -1,6 +1,7 @@
 # 阅读(legado)书源
 
 自己写的[阅读](https://github.com/gedoor/legado)书源。
+> 2026.10更新：legado已经没了，可以找fork版。另外这个网站实际质量一般，有不少错别字。此书源也不会维护。
 
 ## 中华典藏
 找寒假必读书目的电子版时发现的，[原网站](https://www.zhonghuadiancang.com/)就质量不错，UI比较好看且无广告。
