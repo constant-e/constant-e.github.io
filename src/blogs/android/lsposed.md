@@ -1,10 +1,10 @@
 ---
 order: 2
 ---
+# LSPosed
+
 # 2026.10更新
 LSPosed早已恢复Release版本的公开更新。此外，在早些时候，LSPosed IT已不再推送绑定GitHub账号的LSPosed IT版本，而是使用LSPosedArchives频道公开发布。可以认为，除不再开源外，LSPosed的更新已经恢复，本文终结。
-
-# LSPosed
 
 众所周知，LSPosed在2024.1停止了公开更新，并且短期内没有完全恢复的希望。而官方版LSPosed没有公开对新Android版本的修复。因此，在一段时间内，我们需要LSPosed的修改版。
 
